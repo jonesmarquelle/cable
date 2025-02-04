@@ -1,0 +1,13 @@
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Chrome extension files
+*.crx
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
