@@ -66,6 +66,12 @@ function addEndCardTimestamp() {
     const endCardElements = document.querySelectorAll('.ytp-ce-element');
 
     endCardElements.forEach(async element => {
+        const isPlaylist = element.querySelector('.ytp-ce-playlist-title') !== null;
+        if (isPlaylist) {
+            console.debug('is playlist');
+            return false;
+        }
+
         const overlay = element.querySelector('.ytp-ce-covering-overlay');
         if (!overlay) {
             console.debug('no overlay found');
